@@ -77,8 +77,8 @@ function calculateTotals() {
     
     // display totals
     var totalsTable = document.getElementById("totals-table");
-    while (totalsTable.rows.length > 0) {
-      totalsTable.deleteRow(0);
+    while (totalsTable.rows.length > 1) {
+      totalsTable.deleteRow(1);
     }
     for (var person in totals) {
       var row = totalsTable.insertRow(-1);
